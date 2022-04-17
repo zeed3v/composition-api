@@ -16,6 +16,17 @@ const routes = [
     path: '/contador',
     name: 'Contador',
     component: () => import(/* webpackChunkName: "about" */ '../views/Contador.vue')
+  },
+  {
+    path: '/paises',
+    name: 'Paises',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Paises.vue')
+  },
+  {
+    path: '/paises/:nombre',
+    name: 'Pais',
+    props: true,
+    component: () => import(/* webpackChunkName: "about" */ '../views/Pais.vue')
   }
   
   
